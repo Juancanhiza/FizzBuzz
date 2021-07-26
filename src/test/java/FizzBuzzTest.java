@@ -6,15 +6,15 @@ public class FizzBuzzTest {
     private FizzBuzz fizzBuzz;
 
     @Test
-    public void printNumberTest(){
+    public void returnNumberTest(){
         fizzBuzz = new FizzBuzz();
-        Assert.assertEquals(1, fizzBuzz.printNumber(1));
+        Assert.assertEquals("1", fizzBuzz.getNumberOrFizz(1));
     }
 
     @Test
-    public void printFizzTest(){
+    public void returnFizzTest(){
         fizzBuzz = new FizzBuzz();
-        Assert.assertEquals("fizz", fizzBuzz.printFizz(3));
+        Assert.assertEquals("fizz", fizzBuzz.getNumberOrFizz(3));
     }
 
 }

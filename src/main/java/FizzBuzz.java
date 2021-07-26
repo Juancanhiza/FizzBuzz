@@ -2,12 +2,11 @@
 
 public class FizzBuzz {
 
-    public int printNumber(int numero){
-        return numero;
+    public String getNumberOrFizz(int number){
+        if(number%3==0){
+            return "fizz";
+        }
+        return Integer.toString(number);
     }
 
-    public String printFizz(int numero)
-    {
-        return "fizz";
-    }
 }
